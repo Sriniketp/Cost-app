@@ -1,0 +1,940 @@
+commodity,resource_pool,pool_kind
+AELC,Agriculture demand,Demand
+AGRBIODST,Bioenergy and waste,Fuel
+AGRBIOLPG,Bioenergy and waste,Fuel
+AGRBOM,Bioenergy and waste,Fuel
+AGRCH4N,,
+AGRCH4P,,
+AGRCO2N,,
+AGRCO2P,,
+AGRCOA,Coal,Fuel
+AGRDISTELC,Electricity,Fuel
+AGRDUM,,
+AGRELC,Electricity,Fuel
+AGRGRASS,Bioenergy and waste,Fuel
+AGRHFCN,,
+AGRHFCP,,
+AGRHFO,Petroleum products,Fuel
+AGRHYG,Hydrogen,Fuel
+AGRLAND,,
+AGRLANDCDR,,
+AGRLFO,Petroleum products,Fuel
+AGRLPG,Petroleum products,Fuel
+AGRMAINSBOM,Bioenergy and waste,Fuel
+AGRMAINSGAS,Natural gas,Fuel
+AGRMAINSHYG,Hydrogen,Fuel
+AGRN2ON,,
+AGRN2OP,,
+AGRNGA,Natural gas,Fuel
+AGRNH3,,
+AGRNOX,,
+AGRPM10,,
+AGRPM25,,
+AGRPOLWST,Bioenergy and waste,Fuel
+AGRSO2,,
+AGRVOC,,
+AHEAT,Agriculture demand,Demand
+ALAND,,
+ALAND-DUM,,
+AMM,Synthetic fuels,Fuel
+ATRA,Agriculture demand,Demand
+BENZ,Manufactured fuels,Fuel
+BFG,Manufactured fuels,Fuel
+BGRASS,Bioenergy and waste,Fuel
+BID3_WASTE,,
+BIO-METH,Bioenergy and waste,Fuel
+BIOCHR,,
+BIOCHRA,,
+BIODST,Bioenergy and waste,Fuel
+BIODST-FT,Bioenergy and waste,Fuel
+BIOGCO2N,,
+BIOJET-FT,Bioenergy and waste,Fuel
+BIOKER-FT,Bioenergy and waste,Fuel
+BIOLFO,Bioenergy and waste,Fuel
+BIOLPG,Bioenergy and waste,Fuel
+BIONAPH,Bioenergy and waste,Fuel
+BIOOIL,Bioenergy and waste,Fuel
+BMETHANE,Bioenergy and waste,Fuel
+BOG-AD,Bioenergy and waste,Fuel
+BOG-G,Bioenergy and waste,Fuel
+BOG-LF,Bioenergy and waste,Fuel
+BOM,Bioenergy and waste,Fuel
+BPELH,Bioenergy and waste,Fuel
+BPELL,Bioenergy and waste,Fuel
+BPELW,Bioenergy and waste,Fuel
+BRSEED,Bioenergy and waste,Fuel
+BSEWSLG,Bioenergy and waste,Fuel
+BSLURRY,Bioenergy and waste,Fuel
+BSTARCH,Bioenergy and waste,Fuel
+BSTWWST,Bioenergy and waste,Fuel
+BSUGAR,Bioenergy and waste,Fuel
+BTREATSTW,Bioenergy and waste,Fuel
+BTREATWOD,Bioenergy and waste,Fuel
+BVOIL,Bioenergy and waste,Fuel
+BWOD,Bioenergy and waste,Fuel
+BWODLOG,Bioenergy and waste,Fuel
+BWODWST,Bioenergy and waste,Fuel
+CBGDP_BIOENERGY,Bioenergy and waste,Fuel
+CBGDP_CCUS,,
+CBGDP_ELECTRICITY,Electricity,Fuel
+CBGDP_EMISSIONS,,
+CBGDP_HYDROGEN,Hydrogen,Fuel
+CBGDP_NATURAL GAS,Natural gas,Fuel
+CBGDP_OIL,Petroleum products,Fuel
+CBGDP_SOLID FUELS,Manufactured fuels,Fuel
+CCC_EMISSIONS,,
+CH4TOT,,
+CH4TOT_MT,,
+CO2-IND-ROW,,
+CO2-IND-UK,,
+CO2CRD,,
+CO2PTL_D,,
+CO2SEQ,,
+CO2SEQ_D,,
+CO2TOT,,
+CO2TOT_MT,,
+CO2UTL,,
+CO2UTL_D,,
+COA,Coal,Fuel
+COA-E,Coal,Fuel
+COACOK,Coal,Fuel
+COG,Manufactured fuels,Fuel
+COK,Manufactured fuels,Fuel
+DACCO2N,,
+DUMMYAIR,,
+EEP_ELECTRICITY,Electricity,Fuel
+EEP_EMISSIONS,,
+EEP_NATURAL GAS,Natural gas,Fuel
+EEP_PETROLEUM PRODUCTS,Petroleum products,Fuel
+EEP_PETROLEUM PRODUCTS (AVIATION),Petroleum products,Fuel
+EEP_PETROLEUM PRODUCTS (RAIL),Petroleum products,Fuel
+EEP_PETROLEUM PRODUCTS (ROAD TRANSPORT),Petroleum products,Fuel
+EEP_PETROLEUM PRODUCTS (SHIPPING),Petroleum products,Fuel
+EEP_RENEWABLES,Renewable resources,Fuel
+EEP_SOLID / MANUFACTURED FUELS,Manufactured fuels,Fuel
+ELC,Electricity,Fuel
+ELC-E-EU,Electricity,Fuel
+ELC-E-IRE,Electricity,Fuel
+ELC-I-EU,Electricity,Fuel
+ELC-I-IRE,Electricity,Fuel
+ELCBFG,Manufactured fuels,Fuel
+ELCBIOCOA,Bioenergy and waste,Fuel
+ELCBIOLFO,Bioenergy and waste,Fuel
+ELCBIOOIL,Bioenergy and waste,Fuel
+ELCBIORETRO-DUMMY,,
+ELCBOG-AD,Bioenergy and waste,Fuel
+ELCBOG-LF,Bioenergy and waste,Fuel
+ELCBOG-SW,Bioenergy and waste,Fuel
+ELCBOM,Bioenergy and waste,Fuel
+ELCCH4N,,
+ELCCH4P,,
+ELCCO2N,,
+ELCCO2P,,
+ELCCOA,Coal,Fuel
+ELCCOARETRO-DUMMY,,
+ELCCOG,Manufactured fuels,Fuel
+ELCCOMAIR,,
+ELCGEN,Electricity,Fuel
+ELCGENSURPLUS,Electricity,Fuel
+ELCGEO,Renewable resources,Fuel
+ELCHFCN,,
+ELCHFCP,,
+ELCHFO,Petroleum products,Fuel
+ELCHYDDAM,Renewable resources,Fuel
+ELCHYG,Hydrogen,Fuel
+ELCHYGD,Hydrogen,Fuel
+ELCHYGIGCC,Hydrogen,Fuel
+ELCLFO,Petroleum products,Fuel
+ELCLPG,Petroleum products,Fuel
+ELCLTH,Waste heat,Fuel
+ELCMAINSBOM,Bioenergy and waste,Fuel
+ELCMAINSGAS,Natural gas,Fuel
+ELCMSC,Petroleum products,Fuel
+ELCMSWINO,Bioenergy and waste,Fuel
+ELCMSWINO-RETRO,Bioenergy and waste,Fuel
+ELCMSWORG,Bioenergy and waste,Fuel
+ELCMSWORG-RETRO,Bioenergy and waste,Fuel
+ELCMSWRETRO-DUMMY,,
+ELCMSWRETRO-DUMMY-B,,
+ELCMSWRETRO-DUMMY-W,,
+ELCN2ON,,
+ELCN2OP,,
+ELCNGA,Natural gas,Fuel
+ELCNGARETRO-DUMMY,,
+ELCNGARETRO-DUMMY-B,,
+ELCNGARETRO-DUMMY-F,,
+ELCNH3,,
+ELCNOX,,
+ELCPELH,Bioenergy and waste,Fuel
+ELCPELL,Bioenergy and waste,Fuel
+ELCPM10,,
+ELCPM25,,
+ELCPOLWST,Bioenergy and waste,Fuel
+ELCSO2,,
+ELCSOL,Renewable resources,Fuel
+ELCSTWWST,Bioenergy and waste,Fuel
+ELCSURPLUS,Electricity,Fuel
+ELCTID,Renewable resources,Fuel
+ELCTRANSBOM,Bioenergy and waste,Fuel
+ELCTRANSBOM-RETRO,Bioenergy and waste,Fuel
+ELCTRANSGAS,Natural gas,Fuel
+ELCTRANSGAS-RETRO,Natural gas,Fuel
+ELCURN,Nuclear fuels,Fuel
+ELCURN-DUM,Nuclear fuels,Fuel
+ELCVOC,,
+ELCWAV,Renewable resources,Fuel
+ELCWNDOFS,Renewable resources,Fuel
+ELCWNDONS,Renewable resources,Fuel
+ELCWSTHEAT,Waste heat,Fuel
+ETH,Bioenergy and waste,Fuel
+GEO,Renewable resources,Fuel
+GHG-AGR-NO-LULUCF,,
+GHG-DAS-ETS,,
+GHG-DAS-NON-ETS,,
+GHG-ELC,,
+GHG-ELC-CAPTURED,,
+GHG-ELC-ETS,,
+GHG-ELC-ETS-CAPTURED,,
+GHG-ELC-ETS-REMOVALS,,
+GHG-ELC-NON-ETS,,
+GHG-ELC-NON-ETS-CAPTURED,,
+GHG-ELC-NON-ETS-REMOVALS,,
+GHG-ELC-REMOVALS,,
+GHG-ETS-NET,,
+GHG-ETS-NO-IAS-NET,,
+GHG-ETS-NO-IAS-TER,,
+GHG-ETS-TER,,
+GHG-ETS-YES-IAS-NET,,
+GHG-ETS-YES-IAS-TER,,
+GHG-HFC-NON-ETS,,
+GHG-IAS-ETS,,
+GHG-IAS-NON-ETS,,
+GHG-IND-ETS,,
+GHG-IND-ETS-CAPTURED,,
+GHG-IND-ETS-REMOVALS,,
+GHG-IND-NON-ETS,,
+GHG-IND-NON-ETS-CAPTURED,,
+GHG-IND-NON-ETS-REMOVALS,,
+GHG-LULUCF,,
+GHG-NO-AS-YES-LULUCF-NET,,
+GHG-NO-IAS-NO-LULUCF-NET,,
+GHG-NO-IAS-NO-LULUCF-TER,,
+GHG-NO-IAS-YES-LULUCF-NET,,
+GHG-NO-IAS-YES-LULUCF-TER,,
+GHG-NON-ETS-NO-LULUCF-NET,,
+GHG-NON-ETS-NO-LULUCF-TER,,
+GHG-NON-ETS-YES-LULUCF-NET,,
+GHG-NON-ETS-YES-LULUCF-TER,,
+GHG-OTHER-ETS,,
+GHG-OTHER-ETS-CAPTURED,,
+GHG-OTHER-ETS-REMOVALS,,
+GHG-OTHER-NON-ETS,,
+GHG-OTHER-NON-ETS-REMOVALS,,
+GHG-REF-ETS,,
+GHG-REF-ETS-CAPTURED,,
+GHG-REF-NON-ETS,,
+GHG-RES-ETS,,
+GHG-RES-NON-ETS,,
+GHG-SER-ETS,,
+GHG-SER-NON-ETS,,
+GHG-TRA-NON-ETS-NO-AS,,
+GHG-YES-IAS-NO-LULUCF-NET,,
+GHG-YES-IAS-NO-LULUCF-TER,,
+GHG-YES-IAS-YES-LULUCF-NET,,
+GHG-YES-IAS-YES-LULUCF-TER,,
+GHGTOT,,
+GHGTOT_MT,,
+HFCTOT,,
+HFCTOT_MT,,
+HYDDAM,Renewable resources,Fuel
+HYDROR,Renewable resources,Fuel
+HYGBIOO,Bioenergy and waste,Fuel
+HYGBPEL,Bioenergy and waste,Fuel
+HYGCH4N,,
+HYGCH4P,,
+HYGCO2N,,
+HYGCO2P,,
+HYGCOA,Coal,Fuel
+HYGELC,Electricity,Fuel
+HYGELCSURP,Electricity,Fuel
+HYGHFCN,,
+HYGHFCP,,
+HYGL,Hydrogen,Fuel
+HYGL-IGCC,Hydrogen,Fuel
+HYGLELC,Electricity,Fuel
+HYGLHPD,Hydrogen,Fuel
+HYGLHPT,Hydrogen,Fuel
+HYGLNGA,Natural gas,Fuel
+HYGMSWINO,Bioenergy and waste,Fuel
+HYGMSWORG,Bioenergy and waste,Fuel
+HYGN2ON,,
+HYGN2OP,,
+HYGNH3,,
+HYGNOX,,
+HYGPM10,,
+HYGPM25,,
+HYGSELC,Electricity,Fuel
+HYGSNGA,Natural gas,Fuel
+HYGSO2,,
+HYGVOC,,
+HYL,Hydrogen,Fuel
+HYLTK,Hydrogen,Fuel
+IAM,,
+ICH,Industry demand,Demand
+ICHDRY,Drying,Service
+ICHHTH,High temperature heat,Service
+ICHLTH,Low temperature heat,Service
+ICHMOT,Motor drive,Service
+ICHNEUOTH,Industry demand,Demand
+ICHOTH,Industry other,Service
+ICHPRO,Industry byproducts,Service
+ICHREF,Refrigeration,Service
+ICHSPC,Space heating,Service
+ICHSTM,Steam,Fuel
+ICM,,
+ICMCLK,,
+ICMCLKD,,
+ICMCLKQR,,
+ICR,Industry demand,Demand
+ICRDRY,Drying,Service
+ICRHTH,High temperature heat,Service
+ICRLTH,Low temperature heat,Service
+ICRMOT,Motor drive,Service
+ICROTH,Industry other,Service
+ICRSPC,Space heating,Service
+IFD,Industry demand,Demand
+IFDDRY,Drying,Service
+IFDLTH,Low temperature heat,Service
+IFDMOT,Motor drive,Service
+IFDOTH,Industry other,Service
+IFDREF,Refrigeration,Service
+IFDSTM,Steam,Fuel
+IGL,Industry demand,Demand
+IGLHTH,High temperature heat,Service
+IGLMRG,,
+IGLOTH,Industry other,Service
+IHVC,,
+IIS,,
+IISBFGB,Manufactured fuels,Fuel
+IISBFGC,Manufactured fuels,Fuel
+IISCOACOKB,Coal,Fuel
+IISCOGB,Manufactured fuels,Fuel
+IISCOGC,Manufactured fuels,Fuel
+IISCOKB,Manufactured fuels,Fuel
+IISCOKE,Manufactured fuels,Fuel
+IISCOKS,Manufactured fuels,Fuel
+IISELCB,Electricity,Fuel
+IISELCC,Electricity,Fuel
+IISELCE,Electricity,Fuel
+IISELCS,Electricity,Fuel
+IISHFOB,Petroleum products,Fuel
+IISHRS,,
+IISHYGDRI,Hydrogen,Fuel
+IISLST,,
+IISLTH,Low temperature heat,Service
+IISLTHB,Low temperature heat,Service
+IISLTHC,Low temperature heat,Service
+IISLTHE,Low temperature heat,Service
+IISLTHS,Low temperature heat,Service
+IISNGAB,Natural gas,Fuel
+IISNGAC,Natural gas,Fuel
+IISNGAE,Natural gas,Fuel
+IISPIR,,
+IISSNT,,
+IISTGS,Manufactured fuels,Fuel
+ILM,Industry demand,Demand
+ILMCLK,,
+INDB-METH,Bioenergy and waste,Fuel
+INDBENZ,Manufactured fuels,Fuel
+INDBFG,Manufactured fuels,Fuel
+INDBIOLFO,Bioenergy and waste,Fuel
+INDBIOLPG,Bioenergy and waste,Fuel
+INDBIOOIL,Bioenergy and waste,Fuel
+INDBNAPH,Bioenergy and waste,Fuel
+INDBOG-AD,Bioenergy and waste,Fuel
+INDBOG-LF,Bioenergy and waste,Fuel
+INDBOM,Bioenergy and waste,Fuel
+INDCH4N,,
+INDCH4P,,
+INDCO2N,,
+INDCO2P,,
+INDCOA,Coal,Fuel
+INDCOACOK,Coal,Fuel
+INDCOG,Manufactured fuels,Fuel
+INDCOK,Manufactured fuels,Fuel
+INDDISTELC,Electricity,Fuel
+INDELC,Electricity,Fuel
+INDETH,Bioenergy and waste,Fuel
+INDFTNAPH,Synthetic fuels,Fuel
+INDGRASS,Bioenergy and waste,Fuel
+INDHFCN,,
+INDHFCOTH,,
+INDHFCP,,
+INDHFO,Petroleum products,Fuel
+INDHYG,Hydrogen,Fuel
+INDKER,Petroleum products,Fuel
+INDLFO,Petroleum products,Fuel
+INDLPG,Petroleum products,Fuel
+INDMAINSBOM,Bioenergy and waste,Fuel
+INDMAINSGAS,Natural gas,Fuel
+INDMAINSHYG,Hydrogen,Fuel
+INDMAINSHYGB,Hydrogen,Fuel
+INDMAINSHYGG,Hydrogen,Fuel
+INDMAINSHYGR,Hydrogen,Fuel
+INDMSWINO,Bioenergy and waste,Fuel
+INDMSWORG,Bioenergy and waste,Fuel
+INDN2ON,,
+INDN2OP,,
+INDNEUBNZ,Manufactured fuels,Fuel
+INDNEUCH4N,,
+INDNEUCH4S,,
+INDNEUCO2N,,
+INDNEUCO2S,,
+INDNEUHYG,Hydrogen,Fuel
+INDNEULFO,Petroleum products,Fuel
+INDNEULPG,Petroleum products,Fuel
+INDNEUMSC,Petroleum products,Fuel
+INDNEUN2ON,,
+INDNEUN2OS,,
+INDNEUNGA,Natural gas,Fuel
+INDNGA,Natural gas,Fuel
+INDNH3,,
+INDNOX,,
+INDPELH,Bioenergy and waste,Fuel
+INDPELL,Bioenergy and waste,Fuel
+INDPM10,,
+INDPM25,,
+INDPOLWST,Bioenergy and waste,Fuel
+INDSO2,,
+INDSTM,Steam,Fuel
+INDSYN-METH,Synthetic fuels,Fuel
+INDSYNCOA,Manufactured fuels,Fuel
+INDSYNNAPH,Synthetic fuels,Fuel
+INDSYNOIL,Manufactured fuels,Fuel
+INDVOC,,
+INDWOD,Bioenergy and waste,Fuel
+INDWODWST,Bioenergy and waste,Fuel
+IND_NGABOM,Natural gas,Fuel
+IND_NGABOMLFO,Natural gas,Fuel
+IND_SOLIDBIO,Bioenergy and waste,Fuel
+IND_SOLIDBIOMSW,Bioenergy and waste,Fuel
+INF,Industry demand,Demand
+INFHTH,High temperature heat,Service
+INFMOT,Motor drive,Service
+INFOTH,Industry other,Service
+INM,Industry demand,Demand
+INMDRY,Drying,Service
+INMHTH,High temperature heat,Service
+INMLTH,Low temperature heat,Service
+INMMOT,Motor drive,Service
+INMOTH,Industry other,Service
+INMQR,,
+INMSPC,Space heating,Service
+INMSTM,Steam,Fuel
+IOI,Industry demand,Demand
+IOIDRY,Drying,Service
+IOIHTH,High temperature heat,Service
+IOILTH,Low temperature heat,Service
+IOIMOT,Motor drive,Service
+IOIOTH,Industry other,Service
+IOIREF,Refrigeration,Service
+IOISPC,Space heating,Service
+IOISTM,Steam,Fuel
+IPP,,
+IPPBPA,,
+IPPELCD,Electricity,Fuel
+IPPELCD1,Electricity,Fuel
+IPPELCD2,Electricity,Fuel
+IPPELCD3,Electricity,Fuel
+IPPELCD4,Electricity,Fuel
+IPPELCD5,Electricity,Fuel
+IPPELCO,Electricity,Fuel
+IPPELCO1,Electricity,Fuel
+IPPELCP,Electricity,Fuel
+IPPLTH,Low temperature heat,Service
+IPPLTHD,Low temperature heat,Service
+IPPLTHD1,Low temperature heat,Service
+IPPLTHD2,Low temperature heat,Service
+IPPLTHD3,Low temperature heat,Service
+IPPLTHD4,Low temperature heat,Service
+IPPLTHD5,Low temperature heat,Service
+IPPLTHO,Low temperature heat,Service
+IPPLTHO1,Low temperature heat,Service
+IPPLTHP,Low temperature heat,Service
+IPPPBD,,
+IPPPBP,,
+ISO,Nuclear fuels,Fuel
+LAND,,
+LNG,Natural gas,Fuel
+LUFCH4P,,
+LUFCO2P,,
+LUFN2OP,,
+MCMLST,,
+METH,Synthetic fuels,Fuel
+METHANE,Natural gas,Fuel
+MISCIR,,
+MISLIM,,
+MISORE,,
+MISOXY,,
+MISPLT,,
+MISSCR,,
+MSWBIO,Bioenergy and waste,Fuel
+MSWINO,Bioenergy and waste,Fuel
+MSWORG,Bioenergy and waste,Fuel
+MSWRDF,Bioenergy and waste,Fuel
+N2OTOT,,
+N2OTOT_MT,,
+NGA,Natural gas,Fuel
+NGA-E,Natural gas,Fuel
+NGA-E-EU,Natural gas,Fuel
+NGA-E-IRE,Natural gas,Fuel
+NGA-I-EU,Natural gas,Fuel
+NGA-I-N,Natural gas,Fuel
+NGAPTR,Natural gas,Fuel
+NGARAW,Natural gas,Fuel
+NGASHL-E,Natural gas,Fuel
+OILCRD,Primary oil,Fuel
+OILCRDRAW,Primary oil,Fuel
+OILCRDRAW-E,Primary oil,Fuel
+OILDST,Petroleum products,Fuel
+OILHFO,Petroleum products,Fuel
+OILJET,Petroleum products,Fuel
+OILKER,Petroleum products,Fuel
+OILLFO,Petroleum products,Fuel
+OILLPG,Petroleum products,Fuel
+OILMSC,Petroleum products,Fuel
+OILPET,Petroleum products,Fuel
+PCHPHEAT,CHP,Fuel
+PRCCH4N,,
+PRCCH4P,,
+PRCCO2N,,
+PRCCO2P,,
+PRCCOA,Coal,Fuel
+PRCCOACOK,Coal,Fuel
+PRCELC,Electricity,Fuel
+PRCHFCN,,
+PRCHFCP,,
+PRCHFO,Petroleum products,Fuel
+PRCHYGREF,Hydrogen,Fuel
+PRCHYGT,Hydrogen,Fuel
+PRCLPG,Petroleum products,Fuel
+PRCMSC,Petroleum products,Fuel
+PRCN2ON,,
+PRCN2OP,,
+PRCNGA,Natural gas,Fuel
+PRCNH3,,
+PRCNOX,,
+PRCOILCRD,Primary oil,Fuel
+PRCPM10,,
+PRCPM25,,
+PRCSO2,,
+PRCTRANSGAS,Natural gas,Fuel
+PRCVOC,,
+PRCWSTHEAT,Waste heat,Fuel
+PREFGAS,Manufactured fuels,Fuel
+PWASTEDUM,,
+RBASLT,,
+RBASLTCR,,
+RBASLTPW010,,
+RBASLTPW100,,
+RCE,Residential demand,Demand
+RCH,,
+RCO,,
+REA,Residential demand,Demand
+RECF,,
+RECL,,
+RECP,Residential demand,Demand
+RECR,,
+REL,,
+REO,Residential demand,Demand
+RESBIOLFO,Bioenergy and waste,Fuel
+RESBOM,Bioenergy and waste,Fuel
+RESCH4N,,
+RESCH4P,,
+RESCO2N,,
+RESCO2P,,
+RESCOA,Coal,Fuel
+RESCOK,Manufactured fuels,Fuel
+RESDISTELC,Electricity,Fuel
+RESELC,Electricity,Fuel
+RESELCSURPLUS,Electricity,Fuel
+RESHEATFCCHP-EA,CHP,Fuel
+RESHEATFCCHP-FC,CHP,Fuel
+RESHEATFCCHP-FS,CHP,Fuel
+RESHEATFCCHP-HC,CHP,Fuel
+RESHEATFCCHP-HS,CHP,Fuel
+RESHEATFCCHP-NA,CHP,Fuel
+RESHFCN,,
+RESHFCP,,
+RESHOUSEBOM,Bioenergy and waste,Fuel
+RESHOUSEELC,Electricity,Fuel
+RESHOUSEGAS,Natural gas,Fuel
+RESHOUSEHYG,Hydrogen,Fuel
+RESHYG,Hydrogen,Fuel
+RESHYGREF-EA,Hydrogen,Fuel
+RESHYGREF-FC,Hydrogen,Fuel
+RESHYGREF-FS,Hydrogen,Fuel
+RESHYGREF-HC,Hydrogen,Fuel
+RESHYGREF-HS,Hydrogen,Fuel
+RESHYGREF-NA,Hydrogen,Fuel
+RESKER,Petroleum products,Fuel
+RESLFO,Petroleum products,Fuel
+RESLPG,Petroleum products,Fuel
+RESLTH-EA,District heating,Fuel
+RESLTH-FC,District heating,Fuel
+RESLTH-FS,District heating,Fuel
+RESLTH-HC,District heating,Fuel
+RESLTH-HS,District heating,Fuel
+RESLTH-NA,District heating,Fuel
+RESLTHSURPLUS-EA,District heating,Fuel
+RESLTHSURPLUS-FC,District heating,Fuel
+RESLTHSURPLUS-FS,District heating,Fuel
+RESLTHSURPLUS-HC,District heating,Fuel
+RESLTHSURPLUS-HS,District heating,Fuel
+RESLTHSURPLUS-NA,District heating,Fuel
+RESMAINSBOM,Bioenergy and waste,Fuel
+RESMAINSGAS,Natural gas,Fuel
+RESMAINSHYG,Hydrogen,Fuel
+RESMSWINO,Bioenergy and waste,Fuel
+RESMSWORG,Bioenergy and waste,Fuel
+RESN2ON,,
+RESN2OP,,
+RESNGA,Natural gas,Fuel
+RESNH3,,
+RESNOX,,
+RESPELH,Bioenergy and waste,Fuel
+RESPM10,,
+RESPM25,,
+RESSO2,,
+RESSOL,Renewable resources,Fuel
+RESVOC,,
+RESWOD,Bioenergy and waste,Fuel
+RESWODL,Bioenergy and waste,Fuel
+REW,Residential demand,Demand
+RHCSV-RHEA,Space heating and hot water conservation,Service
+RHCSV-RHFC,Space heating and hot water conservation,Service
+RHCSV-RHFS,Space heating and hot water conservation,Service
+RHCSV-RHHC,Space heating and hot water conservation,Service
+RHCSV-RHHS,Space heating and hot water conservation,Service
+RHCSV-RHNA,Space heating and hot water conservation,Service
+RHEA,Residential demand,Demand
+RHEATPIPE-EA,Space heating and hot water,Service
+RHEATPIPE-EA-LT,Space heating and hot water,Service
+RHEATPIPE-FC,Space heating and hot water,Service
+RHEATPIPE-FC-LT,Space heating and hot water,Service
+RHEATPIPE-FS,Space heating and hot water,Service
+RHEATPIPE-FS-LT,Space heating and hot water,Service
+RHEATPIPE-HC,Space heating and hot water,Service
+RHEATPIPE-HC-LT,Space heating and hot water,Service
+RHEATPIPE-HS,Space heating and hot water,Service
+RHEATPIPE-HS-LT,Space heating and hot water,Service
+RHEATPIPE-NA,Space heating and hot water,Service
+RHEATPIPE-NA-LT,Space heating and hot water,Service
+RHFC,Residential demand,Demand
+RHFS,Residential demand,Demand
+RHHC,Residential demand,Demand
+RHHS,Residential demand,Demand
+RHNA,Residential demand,Demand
+RHSTAND-EA,Space heating and hot water,Service
+RHSTAND-FC,Space heating and hot water,Service
+RHSTAND-FS,Space heating and hot water,Service
+RHSTAND-HC,Space heating and hot water,Service
+RHSTAND-HS,Space heating and hot water,Service
+RHSTAND-NA,Space heating and hot water,Service
+RHUFLOOR-EA,Space heating and hot water,Service
+RHUFLOOR-FC,Space heating and hot water,Service
+RHUFLOOR-FS,Space heating and hot water,Service
+RHUFLOOR-HC,Space heating and hot water,Service
+RHUFLOOR-HS,Space heating and hot water,Service
+RHUFLOOR-NA,Space heating and hot water,Service
+RSRCH4N,,
+RSRCH4P,,
+RSRCO2N,,
+RSRCO2P,,
+RSRHFCN,,
+RSRHFCP,,
+RSRN2ON,,
+RSRN2OP,,
+RWCSV-RWEA,Space heating and hot water conservation,Service
+RWCSV-RWFC,Space heating and hot water conservation,Service
+RWCSV-RWFS,Space heating and hot water conservation,Service
+RWCSV-RWHC,Space heating and hot water conservation,Service
+RWCSV-RWHS,Space heating and hot water conservation,Service
+RWEA,Residential demand,Demand
+RWFC,Residential demand,Demand
+RWFS,Residential demand,Demand
+RWHC,Residential demand,Demand
+RWHS,Residential demand,Demand
+RWNA,Residential demand,Demand
+RWSTAND-EA,Space heating and hot water,Service
+RWSTAND-FC,Space heating and hot water,Service
+RWSTAND-FS,Space heating and hot water,Service
+RWSTAND-HC,Space heating and hot water,Service
+RWSTAND-HS,Space heating and hot water,Service
+RWSTAND-NA,Space heating and hot water,Service
+SCH,Services demand,Demand
+SCHCSVDMD,Cooling conservation,Service
+SCHDELVAIR,Cooling,Service
+SCK,Services demand,Demand
+SCP,Services demand,Demand
+SCPCSV,Non-heat appliance demand conservation,Service
+SERBIOLFO,Bioenergy and waste,Fuel
+SERBOG,Bioenergy and waste,Fuel
+SERBOM,Bioenergy and waste,Fuel
+SERBUILDBOM,Bioenergy and waste,Fuel
+SERBUILDELC,Electricity,Fuel
+SERBUILDGAS,Natural gas,Fuel
+SERBUILDHYG,Hydrogen,Fuel
+SERCH4N,,
+SERCH4P,,
+SERCO2N,,
+SERCO2P,,
+SERCOA,Coal,Fuel
+SERDISTELC,Electricity,Fuel
+SERELC,Electricity,Fuel
+SERGEO,Renewable resources,Fuel
+SERHEAT,Space heating and hot water,Service
+SERHEATFCCHP,CHP,Fuel
+SERHFCN,,
+SERHFCP,,
+SERHFO,Petroleum products,Fuel
+SERHYG,Hydrogen,Fuel
+SERHYGREF,Hydrogen,Fuel
+SERKER,Petroleum products,Fuel
+SERLFO,Petroleum products,Fuel
+SERLPG,Petroleum products,Fuel
+SERLTH,District heating,Fuel
+SERLTHSURPLUS,District heating,Fuel
+SERMAINSBOM,Bioenergy and waste,Fuel
+SERMAINSGAS,Natural gas,Fuel
+SERMAINSHYG,Hydrogen,Fuel
+SERMSWBIO,Bioenergy and waste,Fuel
+SERMSWINO,Bioenergy and waste,Fuel
+SERMSWORG,Bioenergy and waste,Fuel
+SERN2ON,,
+SERN2OP,,
+SERNGA,Natural gas,Fuel
+SERNH3,,
+SERNOX,,
+SERPELH,Bioenergy and waste,Fuel
+SERPM10,,
+SERPM25,,
+SERSO2,,
+SERSOL,Renewable resources,Fuel
+SERVOC,,
+SERWOD,Bioenergy and waste,Fuel
+SHH,Services demand,Demand
+SHHCSVDMD,Space heating and hot water conservation,Service
+SHHDELVAIR,Space heating and hot water,Service
+SHHDELVRAD,Space heating and hot water,Service
+SHL,Services demand,Demand
+SHLCSVDMD,Space heating and hot water conservation,Service
+SHLDELVAIR,Space heating and hot water,Service
+SHLDELVRAD,Space heating and hot water,Service
+SHLDELVUND,Space heating and hot water,Service
+SKNBACKSTOP,,
+SKNBIOCO2AD,,
+SKNBIOCO2B,,
+SKNBIOCO2C,,
+SKNBIOCO2LF,,
+SKNBIOCO2W,,
+SKNDACCO2B,,
+SKNDACCO2PTL,,
+SKNELCCO2B,,
+SKNELCCO2C,,
+SKNELCCO2G,,
+SKNELCCO2O,,
+SKNELCCO2W,,
+SKNHYGCO2B,,
+SKNHYGCO2C,,
+SKNHYGCO2G,,
+SKNHYGCO2W,,
+SKNINDCO2BN,,
+SKNINDCO2N,,
+SKNINDCO2P,,
+SKNOILREFCO2B,,
+SKNREFCO2,,
+SLOF,,
+SLOFCSV,Non-heat appliance demand conservation,Service
+SLOT,,
+SLOTCSV,Non-heat appliance demand conservation,Service
+SOL,Renewable resources,Fuel
+SOTH,Services demand,Demand
+SREF,Services demand,Demand
+SWH,Services demand,Demand
+SWHDELVPIP,Space heating and hot water,Service
+SWHDELVSTD,Space heating and hot water,Service
+SWL,Services demand,Demand
+SWLDELVPIP,Space heating and hot water,Service
+SWLDELVSTD,Space heating and hot water,Service
+SYN-METH,Synthetic fuels,Fuel
+SYNCOA,Manufactured fuels,Fuel
+SYNDST-FT,Synthetic fuels,Fuel
+SYNJET-FT,Synthetic fuels,Fuel
+SYNLFO,Synthetic fuels,Fuel
+SYNNAPH,Synthetic fuels,Fuel
+SYNOIL,Manufactured fuels,Fuel
+TAD,,
+TAI,,
+TB,,
+TC,,
+TF,,
+TH1,,
+TH2,,
+TH3,,
+TID,Renewable resources,Fuel
+TL,,
+TR,,
+TRAAMMDS,Synthetic fuels,Fuel
+TRAAMMDSL,Synthetic fuels,Fuel
+TRAAMMIS,Synthetic fuels,Fuel
+TRAAMMISL,Synthetic fuels,Fuel
+TRABIODST,Bioenergy and waste,Fuel
+TRABIODST-FT,Bioenergy and waste,Fuel
+TRABIODST-FTL,Bioenergy and waste,Fuel
+TRABIODST-FTS,Bioenergy and waste,Fuel
+TRABIODSTL,Bioenergy and waste,Fuel
+TRABIODSTS,Bioenergy and waste,Fuel
+TRABIOJET-FTDA,Bioenergy and waste,Fuel
+TRABIOJET-FTDAL,Bioenergy and waste,Fuel
+TRABIOJET-FTIA,Bioenergy and waste,Fuel
+TRABIOJET-FTIAL,Bioenergy and waste,Fuel
+TRABIOLFO,Bioenergy and waste,Fuel
+TRABIOLFODS,Bioenergy and waste,Fuel
+TRABIOLFODSL,Bioenergy and waste,Fuel
+TRABIOLFOIS,Bioenergy and waste,Fuel
+TRABIOLFOISL,Bioenergy and waste,Fuel
+TRABIOLFOL,Bioenergy and waste,Fuel
+TRABIOMETHDS,Bioenergy and waste,Fuel
+TRABIOMETHDSL,Bioenergy and waste,Fuel
+TRABIOMETHIS,Bioenergy and waste,Fuel
+TRABIOMETHISL,Bioenergy and waste,Fuel
+TRABIOOILIS,Bioenergy and waste,Fuel
+TRABIOOILISL,Bioenergy and waste,Fuel
+TRABOM,Bioenergy and waste,Fuel
+TRACELC,Electricity,Fuel
+TRACELC-COMM,Electricity,Fuel
+TRACELC-PRIV,Electricity,Fuel
+TRACH4N,,
+TRACH4P,,
+TRACNGL,Natural gas,Fuel
+TRACNGS,Natural gas,Fuel
+TRACO2N,,
+TRACO2P,,
+TRACOA,Coal,Fuel
+TRACPHB,Electricity,Fuel
+TRACPHB-COMM,Electricity,Fuel
+TRACPHB-PRIV,Electricity,Fuel
+TRADED-EMISSION-ETS,,
+TRADED-EMISSION-NON-ETS,,
+TRADISTELC,Electricity,Fuel
+TRADST,Petroleum products,Fuel
+TRADSTL,Petroleum products,Fuel
+TRADSTS,Petroleum products,Fuel
+TRAELC,Electricity,Fuel
+TRAETH,Bioenergy and waste,Fuel
+TRAETHL,Bioenergy and waste,Fuel
+TRAETHS,Bioenergy and waste,Fuel
+TRAHFCN,,
+TRAHFCP,,
+TRAHFO,Petroleum products,Fuel
+TRAHFODS,Petroleum products,Fuel
+TRAHFODSL,Petroleum products,Fuel
+TRAHFOIS,Petroleum products,Fuel
+TRAHFOISL,Petroleum products,Fuel
+TRAHYG,Hydrogen,Fuel
+TRAHYGDCN,Hydrogen,Fuel
+TRAHYGDCNA,Hydrogen,Fuel
+TRAHYGDS,Hydrogen,Fuel
+TRAHYGDSL,Hydrogen,Fuel
+TRAHYGIS,Hydrogen,Fuel
+TRAHYGISL,Hydrogen,Fuel
+TRAHYGL,Hydrogen,Fuel
+TRAHYGS,Hydrogen,Fuel
+TRAHYL,Hydrogen,Fuel
+TRAHYLDAL,Hydrogen,Fuel
+TRAHYLDCN,Hydrogen,Fuel
+TRAHYLIAL,Hydrogen,Fuel
+TRAHYLL,Hydrogen,Fuel
+TRAHYLS,Hydrogen,Fuel
+TRAJETDA,Petroleum products,Fuel
+TRAJETDAEL,Petroleum products,Fuel
+TRAJETIA,Petroleum products,Fuel
+TRAJETIAEL,Petroleum products,Fuel
+TRAJETIANL,Petroleum products,Fuel
+TRAJETL,Petroleum products,Fuel
+TRALFO,Petroleum products,Fuel
+TRALFODS,Petroleum products,Fuel
+TRALFODSL,Petroleum products,Fuel
+TRALFOIS,Petroleum products,Fuel
+TRALFOISL,Petroleum products,Fuel
+TRALFOL,Petroleum products,Fuel
+TRALNG,Natural gas,Fuel
+TRALNGDS,Natural gas,Fuel
+TRALNGDSL,Natural gas,Fuel
+TRALNGIS,Natural gas,Fuel
+TRALNGISL,Natural gas,Fuel
+TRALPG,Petroleum products,Fuel
+TRALPGL,Petroleum products,Fuel
+TRALPGS,Petroleum products,Fuel
+TRAMAINSBOM,Bioenergy and waste,Fuel
+TRAMAINSGAS,Natural gas,Fuel
+TRAMAINSHYG,Hydrogen,Fuel
+TRAMETH,Synthetic fuels,Fuel
+TRAN2ON,,
+TRAN2OP,,
+TRANGA,Natural gas,Fuel
+TRANH3,,
+TRANOX,,
+TRAPET,Petroleum products,Fuel
+TRAPETL,Petroleum products,Fuel
+TRAPETS,Petroleum products,Fuel
+TRAPM10,,
+TRAPM25,,
+TRASO2,,
+TRASYNJET-FTDA,Synthetic fuels,Fuel
+TRASYNJET-FTDAL,Synthetic fuels,Fuel
+TRASYNJET-FTIA,Synthetic fuels,Fuel
+TRASYNJET-FTIAL,Synthetic fuels,Fuel
+TRASYNLFODS,Synthetic fuels,Fuel
+TRASYNLFODSL,Synthetic fuels,Fuel
+TRASYNLFOIS,Synthetic fuels,Fuel
+TRASYNLFOISL,Synthetic fuels,Fuel
+TRASYNMETHDS,Synthetic fuels,Fuel
+TRASYNMETHDSL,Synthetic fuels,Fuel
+TRASYNMETHIS,Synthetic fuels,Fuel
+TRASYNMETHISL,Synthetic fuels,Fuel
+TRAVOC,,
+TSD,,
+TSI,,
+TW,,
+UPSCH4N,,
+UPSCH4P,,
+UPSCO2N,,
+UPSCO2P,,
+UPSELC,Electricity,Fuel
+UPSHEAT,CHP,Fuel
+UPSHFCN,,
+UPSHFCP,,
+UPSHYG,Hydrogen,Fuel
+UPSLFO,Petroleum products,Fuel
+UPSMAINSHYG,Hydrogen,Fuel
+UPSN2ON,,
+UPSN2OP,,
+UPSNGA,Natural gas,Fuel
+UPSOILDST,Petroleum products,Fuel
+URN,Nuclear fuels,Fuel
+URN045,Nuclear fuels,Fuel
+URN09,Nuclear fuels,Fuel
+URN19,Nuclear fuels,Fuel
+URND,Nuclear fuels,Fuel
+URNU,Nuclear fuels,Fuel
+WAT,Nuclear fuels,Fuel
+WAV,Renewable resources,Fuel
+WNDOFF,Renewable resources,Fuel
+WNDONS,Renewable resources,Fuel
+XCHECK-GHG-AGR,,
+XCHECK-GHG-RES,,
+XCHECK-GHG-SER,,
+XCHECK-GHG-TRA,,
+XCHECK-GHGTOT-AND-GHG-TER,,

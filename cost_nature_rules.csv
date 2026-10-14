@@ -1,0 +1,18 @@
+priority,action,attributes,process,process_subsector,process_group,energy_role,bucket,headline,note
+5,exclude,Cost_Inv|Cost_Fom|Cost_Act|Cost_Flo,*,Fuel Re-imports,*,*,Excluded - re-import loop,Excluded,Both legs of the re-import loop (dummy export and re-import) carry the process subsector label Fuel Re-imports; domestic production is costed on the MIN* extraction processes (rule 70)
+20,include,Cost_Flo|Cost_Act,*,Fuel Imports,Natural gas,*,Imported natural gas,Fuel imports,IRE_PRICE on gas and LNG import processes
+30,include,Cost_Flo|Cost_Act,*,Fuel Imports,Petroleum products,*,Imported oil,Fuel imports,IRE_PRICE on crude and refined product import processes
+40,include,Cost_Flo|Cost_Act,*,Fuel Imports,Coal,*,Imported coal,Fuel imports,Coal and coke imports
+50,include,Cost_Flo|Cost_Act,*,Fuel Imports,Electricity,*,Imported electricity,Fuel imports,Electricity import processes
+51,include,Cost_Flo|Cost_Act,*,*,Interconnector imports|Net imports,*,Imported electricity,Fuel imports,Power-sector electricity interconnector imports
+60,include,Cost_Flo|Cost_Act,*,Fuel Imports|Imports,*,*,Imported other fuels,Fuel imports,Bioenergy; synthetic fuels; hydrogen; uranium (includes IMPBIOOILCRP-E which is a genuine import)
+70,include,Cost_Flo|Cost_Act,*,Gas Extraction|Oil Extraction|Coal Extraction,*,*,Domestic fossil extraction,Domestic fossil production,UK production costs on the MIN* extraction processes; the only place domestic production is costed
+80,include,Cost_Flo|Cost_Act,*,Fuel Exports,*,*,Fuel export revenue,Exports,Negative values are revenues
+81,include,Cost_Flo|Cost_Act,*,*,Interconnector exports,*,Electricity export revenue,Exports,Negative values are revenues
+85,include,Cost_Flo|Cost_Act,*,Emission Credits,*,*,Carbon credits,Carbon credits,Carbon credits from import/export and backstop processes
+90,include,Cost_Inv,*,*,*,end_use,Capital - end-use equipment,Capital & infrastructure,Annualised investment on VDT-derived end-use technologies
+100,include,Cost_Inv,*,*,*,supply,Capital - energy supply & networks,Capital & infrastructure,Annualised investment on VDT-derived supply boundary
+110,include,Cost_Inv,*,*,*,*,Capital - other,Capital & infrastructure,Annualised investment outside both energy boundaries
+115,include,Cost_Flo|Cost_Act,*,Dummy Imports,*,*,Dummy imports,Dummy imports,Proxy dummy import rows used for constraints and demand balancing
+120,include,Cost_Fom,*,*,*,*,Fixed O&M,Operating & other,All fixed operating costs
+130,include,Cost_Act|Cost_Flo,*,*,*,*,Other variable & delivery costs,Operating & other,Remaining activity and flow costs

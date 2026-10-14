@@ -1,0 +1,26 @@
+# Runtime dependencies for the cost allocation app.
+#
+# Install:  pip install -r requirements.txt
+# Dev only: pip install -r requirements-dev.txt
+
+pandas>=2.2,<3.1
+numpy>=1.26,<3
+openpyxl>=3.1,<4
+plotly>=6.0,<7
+pyodbc>=5.2,<6
+beautifulsoup4>=4.12,<5
+
+# Indirect but required, so pinned explicitly rather than left to chance:
+#   kaleido - Plotly's static image export backend. Its only consumer, the
+#             CLI outputs.py PNG export, was removed in Phase 5; dropping
+#             it is a separate owner decision.
+#   pyarrow - Streamlit serialises DataFrames through Arrow when rendering
+#             st.dataframe / st.data_editor.
+# Neither is imported directly anywhere in this repo; do not remove them on
+# the basis of an unused-import scan.
+kaleido>=1.0,<2
+pyarrow>=7,<25
+
+streamlit>=1.61,<1.62
+pytest>=8,<10
+ruff>=0.16,<0.17

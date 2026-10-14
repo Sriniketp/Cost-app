@@ -1,0 +1,74 @@
+# Tool configuration only.
+#
+# This file deliberately declares NO [build-system] or [project] table. The app
+# is run from a path (run_app.cmd -> streamlit run tools/cost_allocation/app.py,
+# and python -m cost_allocation), and both entry points bootstrap sys.path
+# themselves. Making the project installable would change how those imports
+# resolve, so packaging is intentionally out of scope.
+
+[tool.ruff]
+target-version = "py312"
+line-length = 110
+extend-exclude = [".venv", ".venv-1", "Documentation"]
+
+[tool.ruff.lint]
+select = [
+    "F",    # pyflakes: undefined names, unused imports/variables
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "I",    # isort: import ordering
+    "UP",   # pyupgrade: outdated syntax for the target version
+    "B",    # flake8-bugbear: likely bugs
+    "C4",   # flake8-comprehensions
+]
+ignore = [
+    "E501",  # line length is reported by the formatter, not worth failing on
+    "B008",  # function call in default argument: common and safe in this codebase
+    "C408",  # dict(a=1) over {"a": 1}: the call form reads better for the
+             # keyword-heavy Plotly layout/marker kwargs used throughout the
+             # tab modules, and rewriting ~70 sites buys no behaviour change.
+    # --- Deferred, not accepted: these need case-by-case review ---
+    # Each entry below is existing debt, not an endorsement. Fix opportunistically
+    # when touching a file, then delete the line once the count reaches zero.
+    # Re-check any time with:  ruff check . --select <CODE> --statistics
+    "B905",  # zip() without strict=: adding strict=True can raise on length
+             # mismatch, so each of the ~29 sites needs checking against real
+             # data before enabling.
+    "B023",  # closure over loop variable: 6 sites in energy_scope and
+             # resource_allocation. A genuine bug pattern, but fixing it
+             # changes evaluation semantics; needs targeted tests first.
+    "I001",  # unsorted imports: ~57 files. Deliberately not auto-sorted in the
+             # tooling commit because reordering imports in the two entry points
+             # and the ui_helpers facade risks breaking the sys.path bootstrap
+             # and the load-bearing re-exports.
+    "W291",  # trailing whitespace: ~42 sites, mostly inside the multi-line
+             # markdown strings rendered by the methodology tab, where ruff
+             # cannot prove the whitespace is insignificant.
+    "F841",  # unused local: ~11 sites, including two in the cost_backcalc
+             # reconciliation engine that may be deliberate debugging aids.
+             # Domain maths is not touched without an explicit request.
+    "B007",  # unused loop variable: 8 cosmetic sites.
+    "B028",  # warnings.warn without stacklevel: 2 sites.
+    "UP006", "UP035", "UP045",  # older typing syntax; purely cosmetic churn.
+]
+
+[tool.ruff.lint.per-file-ignores]
+# The Streamlit entry point must repair sys.path before importing the package,
+# so imports legitimately follow executable statements. See the NOTE comment in
+# app.py explaining why this bootstrap cannot be extracted.
+"tools/cost_allocation/app.py" = ["E402"]
+# Same bootstrap pattern: makes tools/ importable before importing the package.
+"tools/build_base_data.py" = ["E402"]
+# Tabs insert the repo root on sys.path before importing, same rationale.
+"tools/cost_allocation/tests/*.py" = ["E402"]
+# ui_helpers is a facade: tab modules import APP_BUILD, RunBundle, money_unit
+# and friends *through* it. Those imports look unused locally but are load
+# bearing re-exports, so F401 must not be enforced (or auto-fixed) here.
+"tools/cost_allocation/ui_helpers.py" = ["F401"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["cost_allocation"]
+
+[tool.pytest.ini_options]
+testpaths = ["tools/cost_allocation/tests"]
+addopts = "-q"

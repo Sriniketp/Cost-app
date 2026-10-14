@@ -1,0 +1,9 @@
+
+The T drive (or "Transfer" drive) is deleted in it's entirety
+(except for this file) EVERY THURSDAY NIGHT.
+
+This is to ensure that files that are of long-term value are
+continuously moved to their correct place.
+
+It's also a security measure as all file transfers are "staged"
+through this area as they enter or leave CBAS.
