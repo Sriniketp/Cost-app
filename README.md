@@ -1,37 +1,183 @@
-# Documentation index
+# Cost Allocation App
 
-Start here. Each document has one job; where two disagree, the canonical
-documents win.
+A Streamlit dashboard that reconstructs, allocates, and reconciles cost
+outputs from the UK TIMES (UKTM) energy system model.
 
-## Canonical
+It reads model results from UK-TIMES-WKG SQL, model inputs (GAMS `.DD` files),
+and label lookup tables, attributes costs to sectors, and reports any divergence
+from the model's own reported totals.
 
-| Document | Read it when you need | Audience |
-|---|---|---|
-| [ARCHITECTURE.md](ARCHITECTURE.md) | How the app is built and the cost methodology it implements — data flow, module responsibilities, investment cases, fuel cost attribution | Developers, analysts verifying method |
-| [PIPELINE.md](PIPELINE.md) | A stage-by-stage walkthrough from SQL retrieval to rendered tab | Developers debugging a run |
-| [DOMAIN_REFERENCE.md](DOMAIN_REFERENCE.md) | What a TIMES term, attribute, or cost parameter means, plus quick-reference tables | Everyone |
-| [DEVELOPMENT_GUIDE.md](DEVELOPMENT_GUIDE.md) | The rules for changing this repository — boundaries, tolerances, testing, checklists, known debt | Anyone editing code |
-| [VISUALIZATION_REFERENCE.md](VISUALIZATION_REFERENCE.md) | Chart conventions, colour usage, and figure patterns | Anyone touching the UI |
-| [QA_PLAN.md](QA_PLAN.md) | How to QA a run before its results are shared — automated report, SQL cross-checks, hand traces, sign-off | Analysts, reviewers |
-| [VD_SQL_EQUIVALENCE_CONTRACT.md](VD_SQL_EQUIVALENCE_CONTRACT.md) | The implemented UK-TIMES-WKG SQL source, mapping, identity, and failure contract | Database/model operations, developers |
+---
 
-A condensed, always-applied version of the development rules lives in
-[.github/copilot-instructions.md](../.github/copilot-instructions.md).
+## Quickstart
 
-## Supporting material
+Requires **Python 3.12**. The app uses Streamlit 1.61 features for dynamic and
+lazy tabs.
 
-| Folder | What it is | Status |
-|---|---|---|
-| [domain-notes/](domain-notes/) | Working notes written while building the app — derivations, investigations, method scratchpads | **Not specifications.** Useful context; may be out of date |
-| [external-reference/](external-reference/) | Third-party TIMES documentation and UKTM papers | **Read-only.** Never edit |
+**First-time users: double-click `run_app.cmd`.** On first launch it:
 
-## Conventions
+1. Finds Python 3.12 (`py -3.12`, `python`, or the default per-user install).
+   If none is found and `winget` is available, it offers to install Python 3.12
+   for your user account.
+2. Creates a virtual environment in `%LOCALAPPDATA%\cost-allocation-app\.venv`.
+3. Installs `requirements.txt` and runs `pip check`.
+4. Starts the app in your browser.
 
-- Link to the canonical documents rather than restating them. Duplicated
-  explanations drift apart and then contradict each other.
-- Update the document in the same change as the behaviour it describes.
-- Prefer deleting superseded documentation over keeping two versions; git
-  history is the archive.
-- `ARCHITECTURE.md` is asserted against by
-  `tools/cost_allocation/tests/test_methodology_documentation.py`. Moving or
-  rewording the methodology sections will fail that test on purpose.
+Later launches skip straight to step 4. If `requirements.txt` changes (for
+example after a `git pull`), the next launch reinstalls automatically. A failed
+install is retried on the next launch. The ODBC driver for SQL Server is a
+system component and is not installed by the script.
+
+Manual setup, if you prefer:
+
+```powershell
+py -3.12 -m venv "$env:LOCALAPPDATA\cost-allocation-app\.venv"
+& "$env:LOCALAPPDATA\cost-allocation-app\.venv\Scripts\python.exe" -m pip install -r requirements.txt
+& "$env:LOCALAPPDATA\cost-allocation-app\.venv\Scripts\python.exe" -m pip check
+.\run_app.cmd
+```
+
+`pip check` must report no conflicts. In particular Streamlit 1.61 requires
+PyArrow 7 through 24.
+
+`run_app.cmd` picks an interpreter in this order:
+
+1. `COST_ALLOCATION_PYTHON` (used as-is; never modified)
+2. `%LOCALAPPDATA%\cost-allocation-app\.venv` (managed: created and kept in
+   sync with `requirements.txt`)
+3. `.venv\Scripts\python.exe` (used as-is; never modified)
+4. None found: create the managed environment (first-run setup above)
+
+The local-appdata location matters when the repository lives on a network
+drive, where a virtual environment cannot be created in place.
+
+Direct launch, if you prefer:
+
+```powershell
+python -m streamlit run tools/cost_allocation/app.py
+```
+
+### How the app loads
+
+- On launch only the **Run Selector** renders. Nothing is read until you select
+  runs.
+- The RunLog and RunGroups are read from UK-TIMES-WKG SQL and cached for five
+  minutes. Run IDs and group codes beginning with `#` are soft-deleted and are
+  not shown.
+- The latest numeric `CB7_dev_xxx` run is pinned first. Already loaded runs are
+  listed next, and the selected/loaded summaries stay above the individual-run
+  and run-group tables.
+- **Load selected runs** performs the one-time preparation stage per run, then
+  the analysis tabs appear.
+- Only the open tab renders. The first visit to a tab may do extra work;
+  revisits reuse the prepared run.
+- Raw VD rows are retrieved only from `usr.Get_RawVD`; SQL failures block the
+  selected run rather than falling back to a file.
+
+---
+
+## Configuration
+
+The former `python -m cost_allocation` command line was removed in Phase 5;
+the dashboard is the only entry point.
+
+The default database is `UK-TIMES-WKG` on `VMSPDB06.cbas.cloud`, using
+`ODBC Driver 17 for SQL Server` and Windows trusted authentication. Override
+`DB_DRIVER`, `DB_SERVER`, or `DB_DATABASE` when required. Set `DB_DEPLOY=true`
+for Active Directory managed-identity authentication.
+
+**DD/VDT source:** each run's `.RUN` file (named after the run ID), its DD
+files and its VDT are read from the run's commit in
+[uk-times-off-sen/uktm-dds](https://gitlab2.cbas.cloud/uk-times-off-sen/uktm-dds).
+The app keeps its own bare mirror under `~/.cache/cost_allocation/uktm-dds.git`,
+cloned on first use with your normal git credentials and fetched when a new run
+ID is not found. No local path needs configuring.
+
+Optional overrides: `UKTM_DDS_DIR` reuses an existing local clone instead of
+the mirror; `UKTM_DDS_REPO_URL` points at a different https remote.
+
+---
+
+## Repository layout
+
+| Path | Contents |
+|---|---|
+| `tools/cost_allocation/` | The application package: pipeline, domain maths, I/O, and `tabs/` for the dashboard UI |
+| `tools/cost_allocation/tests/` | pytest suite |
+| `tools/build_base_data.py` | Standalone script — see below |
+| `tools/tabulate_dd_inputs.py` | Standalone script — see below |
+| `tools/lookup_tables/` | Tracked reference data: label maps, cost nature rules, resource pools |
+| `Documentation/` | All documentation — start at [Documentation/README.md](Documentation/README.md) |
+| `requirements.txt` | Runtime dependencies |
+| `requirements-dev.txt` | Test and lint tooling |
+| `pyproject.toml` | ruff and pytest configuration |
+
+---
+
+## Standalone scripts
+
+Both live in `tools/` and run independently of the dashboard.
+
+### `tools/build_base_data.py`
+
+Builds a single effective-value CSV from GAMS DD input files: extracts
+cost-related `PARAMETER` blocks, applies scenario precedence from the `.RUN`
+file's `$BATINCLUDE` order (later file wins), and writes the result for the
+reconciliation app to consume.
+
+```powershell
+python tools/build_base_data.py [DD_DIR] [RUN_FILE] [OUTPUT]
+```
+
+`DD_DIR` (a folder of `.dd` files plus the `.RUN` file) defaults to
+`$UKTM_DDS_DIR` and is required if that is unset; the others default to `Ref_Outputsplit_test02.RUN` and
+`tools/lookup_tables/base_data.csv`.
+
+### `tools/tabulate_dd_inputs.py`
+
+Exports a DD audit trail with precedence and TIMES
+interpolation/extrapolation applied — used to explain where an input value came
+from.
+
+```powershell
+python tools/tabulate_dd_inputs.py --run-id Ref_prax_closure01
+python tools/tabulate_dd_inputs.py --run-id Ref_prax_closure01 --excel
+python tools/tabulate_dd_inputs.py --dd-dir <folder with .dd files> --run-file Ref_Outputsplit_test02.RUN
+```
+
+Outputs land under `tools/outputs/dd_tabulation/`:
+
+| File | Contents |
+|---|---|
+| `dd_include_order.csv` | Ordered DD files from `$BATINCLUDE` |
+| `dd_lineage_all_rows.csv` | Every parsed DD row with winner flags |
+| `dd_effective_after_precedence_and_ie.csv` | Final effective values |
+| `dd_tabulation.xlsx` | All of the above as sheets, with `--excel` |
+
+---
+
+## Documentation
+
+Start at **[Documentation/README.md](Documentation/README.md)**, which indexes
+everything. The two you are most likely to want:
+
+- [Documentation/ARCHITECTURE.md](Documentation/ARCHITECTURE.md) — how the app
+  works and the cost methodology it implements
+- [Documentation/DOMAIN_REFERENCE.md](Documentation/DOMAIN_REFERENCE.md) — TIMES
+  terms, cost parameters, and quick reference tables
+
+---
+
+## Contributing
+
+Install the tooling and run both checks before proposing a change:
+
+```powershell
+pip install -r requirements-dev.txt
+pytest
+ruff check .
+```
+
+Read **[Documentation/DEVELOPMENT_GUIDE.md](Documentation/DEVELOPMENT_GUIDE.md)**
+first. It covers module boundaries, numerical-integrity rules, the tolerances
+you must not quietly change, and the before-merge checklist.
